@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{t1enc}
+\usepackage{fullpage}
+\usepackage{enumitem}
+
+\frenchspacing
+
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[unicode]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\newcommand{\publication}[1]{\item \bibentry{#1}}
+
+\newenvironment{pubcat}[1]{
+	\subsection*{#1}
+	\begin{enumerate}[label={[\arabic*]}]
+}{ 
+	\end{enumerate}
+}
+
+\begin{document}
+	
+\begin{center}
+{\Large Levente Bajczi -- List of Publications}
+\end{center}
+
+\nobibliography{publications}
+\bibliographystyle{plain}
+
+\begin{pubcat}{Journal Articles}
+	\publication{acmtecs2019}
+\end{pubcat}
+
+\begin{pubcat}{Conference Papers}
+	\publication{formalise22}
+	\publication{tacas22}
+\end{pubcat}
+
+% \begin{pubcat}{Workshop Papers}
+% \end{pubcat}
+
+% \begin{pubcat}{Technical Reports}
+% 	\publication{cern2015}
+% \end{pubcat}
+
+% \begin{pubcat}{Local Events}
+% 	\publication{minisy2019}
+% 	\publication{minisy2018}
+% 	\publication{minisy2017fr}
+% 	\publication{minisy2017}
+% \end{pubcat}
+
+\end{document}

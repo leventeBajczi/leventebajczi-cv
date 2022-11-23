@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  compile_paper_job:
+    runs-on: ubuntu-latest
+    name: Compile
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build PDFs with the LaTeX engine in Docker
+      uses: ftsrg/document-converter-actions@master
+    - name: Collect result for deployment
+      run: |
+        mkdir out
+        cp src/*.pdf out/
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish_dir: 'out/'
+        github_token: ${{ secrets.GH_PAT }}

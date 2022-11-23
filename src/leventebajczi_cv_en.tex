@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[magyar]{babel}
+\usepackage{fontawesome5}
+
+\usepackage[scale=0.84]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\newcommand{\weblink}[2]{{\href{#1}{#2}}}
+
+\name{Levente}{Bajczi}
+\title{Computer scientist $\cdot$ PhD Student}
+%\address{}{}{}
+%\phone[mobile]{}
+%\phone[fixed]{}
+%\phone[fax]{}
+%\email{}
+%\email{}
+%\homepage{}
+%\extrainfo{}
+\extrainfo{
+	Budapest, Hungary \faHome{}\\
+	\weblink{bajczi@mit.bme.hu}{bajczi@mit.bme.hu} \faEnvelope{}\\
+	\weblink{http://leventebajczi.github.io}{leventebajczi.github.io \faGlobe{}}\\
+	\weblink{http://github.com/leventeBajczi}{leventeBajczi \faGithub{}}\\
+	\weblink{https://www.linkedin.com/in/leventebajczi/}{leventebajczi \faLinkedin{}}\\
+	% \weblink{https://twitter.com/bajczilevi}{bajczilevi \faTwitterSquare{}}\\
+	\weblink{https://orcid.org/my-orcid?orcid=0000-0002-6551-5860}{0000-0002-6551-5860 \faOrcid{}}
+}
+
+\setlength{\fboxsep}{0pt}
+\photo[70pt][0.3pt]{cropped-square.jpg}
+%\quote{Some quote}
+
+\begin{document}
+
+\makecvtitle
+\vspace{-3em}
+
+\section{\faGraduationCap{} Education and Degrees}
+%
+\cventry{2022--\phantom{0000}}{Computer Science PhD}{Budapest University of Technology and Economics}{}{}{Advised by \weblink{https://inf.mit.bme.hu/en/members/molnarv}{Vince Molnár}}
+%
+\cventry{2021--2022}{Computer Engineering MSc}{Budapest University of Technology and Economics}{}{}{\weblink{https://leventebajczi.github.io/publications/mscthesis22.pdf}{Thesis: Handling Axiomatic Memory Models in Abstraction-Based Model Checking of Concurrent and Distributed Systems \faFile*[regular]}}
+%
+\cventry{2017--2021}{Computer Engineering BSc}{Budapest University of Technology and Economics}{}{}{\weblink{https://leventebajczi.github.io/publications/bscthesis20.pdf}{Thesis: Stateless software model checking parameterized with memory consistency models \faFile*[regular]}}
+
+\section{\faGlobe{} Employment}
+%
+\cventry{2021--\phantom{0000}}%
+{Center for University-Industry Cooperation, BME}{Budapest, HU}{Research Assistant}{}%
+{Involved in systems engineering related research and development.}
+%
+\cventry{2020--2021}%
+{thyssenkrupp Components Technology Hungary}{Budapest, HU}{IoT Consultant}{}%
+{Providing feedback to IoT system developers (related to communication, networking and system design).}
+%
+\cventry{2019--2022}%
+{Budapest University of Technology and Economics}{Budapest, HU}{Teaching Assistant}{}%
+{Delivering practical lectures, correcting and assembling exams, managing homework IT infrastructure.}
+%
+\section{\faIdCard{} Internships}
+%
+\cventry{2020}%
+{thyssenkrupp Components Technology Hungary}{Budapest, HU}{Software Engineering Intern}{}%
+{Developing experimental multiprocessing support for a custom AUTOSAR Operating System.}
+%
+\section{\faHandshake{} Volunteering}
+%
+\cventry{2015--2021}%
+{\weblink{https://skool.org.hu/}{Skool}}{Budapest, HU}{Mentor \& Programming Tutor}{}%
+{Helping underrepresented students start their journey with programming.}
+%
+\section{\faCogs{} Certifications}
+\cventry{2021}%
+{\weblink{https://www.omg.org/ocsmp}{OMG-OCSMP}}%
+{}{}{}{Demonstrating the ability to interpret and understand basic MBSE concepts along with SysML models.}
+%
+\section{\faLightbulb{} Skills and Interests}
+\cvitem{Research}{Formal methods, model checking, systems engineering, SAT/SMT, compilers}
+\cvitem{Development}{Java, Kotlin, Python, C, C++, Shell, Git, CI/CD}
+\cvitem{Tools}{%
+	\weblink{https://github.com/ftsrg/theta}{Theta \faGithub}
+}
+\cvitem{Languages}{Hungarian (native), English (advanced), German (conversational)}
+
+
+\newpage
+
+\section{\faTrophy{} Awards and Scholarships}
+\cventry{2019--2023}{"ÚNKP" Research Scholarship}{}{}{}{}
+\cventry{2019--2022}{National Academic Scholarship}{}{}{}{}
+\cventry{2018--2021}{Scholarship of the Faculty of BME-VIK}{}{}{}{}
+\cventry{2019, 2021}{First place at the National Scientific Students' Associations Conference}{}{}{}{}
+\cventry{2020}{First place at the Scientific Students' Associations Conference (Software)}{}{}{}{}
+\cventry{2018, 2021}{First place at the Scientific Students' Associations Conference (Embedded Systems)}{}{}{}{}
+\cventry{2018, 2021}{Award of the Rector of the University}{}{}{}{}
+\cventry{2019}{Travel Grant by ACM SIGBED to attend EMSOFT '19}{}{}{}{}
+\cventry{2019}{EFOP Research Scholarship}{}{}{}{}
+\cventry{2017}{Grant from the Human Capacities Grant Management Office}{}{}{}{}
+\cventry{2016--2018}{Scholarship from the Richter Gedeon Talentum Foundation}{}{}{}{}
+
+\section{\faFile*[regular]{} Selected Publications}
+\cventry{ACM TECS 2019}%
+{Will My Program Break on This Faulty Processor? Formal Analysis of Hardware Fault Activations in Concurrent Embedded Software}%
+{\weblink{https://leventebajczi.github.io/publications/emsoft19.pdf}{\faFile*[regular]}\newline{}
+\underline{L.~Bajczi}, A.~V\"or\"os, V.~Moln\'ar}
+{}{}{}
+%
+\cventry{TACAS'22}%
+{Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)}%
+{\weblink{https://leventebajczi.github.io/publications/tacas22.pdf}{\faFile*[regular]}\newline{}
+Zs. \'{A}dam, \underline{L.~Bajczi}, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'ar}
+{}{}{}
+%
+\cvitem{Full lists}{\weblink{https://leventebajczi.github.io/publications.html}{\faExternalLink*{}\small leventebajczi.github.io/publications.html}\hspace{1cm} \weblink{https://scholar.google.com/citations?user=WDQ2jg4AAAAJ}{\faGraduationCap{}\small scholar.google.com/citations?user=WDQ2jg4AAAAJ}}
+
+\section{\faUniversity{} Academic Activities and Services}
+% \cvitem{PC member}{%
+% 	\weblink{https://www.formalise.org/}{FormaliSE'23},
+% 	\weblink{https://vmcai-2023.github.io/}{VMCAI'23},
+% 	\weblink{https://sites.google.com/view/wosocer2022/}{WoSoCer'22},
+% 	\weblink{http://www.discotec.org/2022/forte.html}{FORTE'22},
+% 	\weblink{https://conf.researchr.org/track/models-2021/models-2021-workshops}{OMBEE'21},
+% 	\weblink{https://qonfest2021.lacl.fr/}{FMICS'21},
+% 	\weblink{https://2021.msrconf.org/track/msr-2021-shadow-pc}{MSR'21-shadow},
+% 	\weblink{https://sv-comp.sosy-lab.org/2021/}{SV-COMP'21},
+% 	\weblink{https://www.openmbee.org/models2020.html}{OMBEE'20}%
+% }
+% \cvitem{AE PC}{%
+% 	\weblink{http://i-cav.org/2022/}{CAV'22},
+% 	\weblink{https://www.univ-orleans.fr/lifo/events/TAP2021/}{TAP'21},
+% 	\weblink{https://conf.researchr.org/home/pldi-2021}{PLDI'21},
+% 	\weblink{https://tap.sosy-lab.org/2020/}{TAP'20},
+% 	\weblink{https://popl20.sigplan.org/home/VMCAI-2020}{VMCAI'20}%
+% }
+\cvitem{Subreviewer}{%
+	\weblink{https://issre2022.github.io/}{ISSRE-W'22},
+	\weblink{https://vmcai-2023.github.io/}{VMCAI'23}%
+}
+\cvitem{AE}{%
+	\weblink{https://sv-comp.sosy-lab.org/2022/}{TACAS'22 (SV-COMP)},
+	\weblink{http://i-cav.org/2022/}{CAV'22}%
+}
+
+\section{\faBook{} Teaching}
+\cvitem{Courses}{%
+	Basics~of~Programming~1-2 $\cdot$
+	Formal~Methods $\cdot$
+	Operating~Systems $\cdot$
+	Systems~Modeling $\cdot$
+	Systems~Engineering $\cdot$
+	Databases~$\cdot$
+	Digital~Technology%
+}
+% \cvitem{Students}{Advising 2 BSc Students}
+
+\end{document}
