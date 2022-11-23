@@ -8,4 +8,4 @@ all: clean
 clean:
 	cd src; \
 	echo Cleaning temporary files and PDF...; \
-	rm -f *.aux *.dvi *.thm *.lof *.log *.lot *.fls *.out *.toc *.bbl *.blg *.pdf *.fdb_latexmk
+	rm -f *.aux *.dvi *.thm *.lof *.log *.lot *.fls *.out *.toc *.bbl *.blg *.fdb_latexmk
