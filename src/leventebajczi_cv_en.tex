@@ -10,6 +10,13 @@
 %\usepackage[magyar]{babel}
 \usepackage{fontawesome5}
 
+\usepackage{environ}
+\usepackage{ifthen}
+
+\NewEnviron{long-entry}{%
+	\expandafter\ifx\csname islong\endcsname\relax \else \BODY\fi%
+}
+
 \usepackage[scale=0.84]{geometry}
 \setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -124,32 +131,15 @@ Zs. \'{A}dam, \underline{L.~Bajczi}, M.~Dobos-Kov\'acs, \'{A}. Hajdu, V.~Moln\'a
 \cvitem{Full lists}{\weblink{https://leventebajczi.github.io/publications.html}{\faExternalLink*{}\small leventebajczi.github.io/publications.html}\hspace{1cm} \weblink{https://scholar.google.com/citations?user=WDQ2jg4AAAAJ}{\faGraduationCap{}\small WDQ2jg4AAAAJ}\hspace{1cm} \weblink{https://orcid.org/0000-0002-6551-5860}{\faOrcid{}\small 0000-0002-6551-5860}}
 
 \section{\faUniversity{} Academic Activities and Services}
-% \cvitem{PC member}{%
-% 	\weblink{https://www.formalise.org/}{FormaliSE'23},
-% 	\weblink{https://vmcai-2023.github.io/}{VMCAI'23},
-% 	\weblink{https://sites.google.com/view/wosocer2022/}{WoSoCer'22},
-% 	\weblink{http://www.discotec.org/2022/forte.html}{FORTE'22},
-% 	\weblink{https://conf.researchr.org/track/models-2021/models-2021-workshops}{OMBEE'21},
-% 	\weblink{https://qonfest2021.lacl.fr/}{FMICS'21},
-% 	\weblink{https://2021.msrconf.org/track/msr-2021-shadow-pc}{MSR'21-shadow},
-% 	\weblink{https://sv-comp.sosy-lab.org/2021/}{SV-COMP'21},
-% 	\weblink{https://www.openmbee.org/models2020.html}{OMBEE'20}%
-% }
-% \cvitem{AE PC}{%
-% 	\weblink{http://i-cav.org/2022/}{CAV'22},
-% 	\weblink{https://www.univ-orleans.fr/lifo/events/TAP2021/}{TAP'21},
-% 	\weblink{https://conf.researchr.org/home/pldi-2021}{PLDI'21},
-% 	\weblink{https://tap.sosy-lab.org/2020/}{TAP'20},
-% 	\weblink{https://popl20.sigplan.org/home/VMCAI-2020}{VMCAI'20}%
-% }
-\cvitem{Reviewer}{%
+\cvitem{PC member}{%
 	\weblink{https://sv-comp.sosy-lab.org/2023/}{TACAS'23 (SV-COMP)},
 	\weblink{https://formalise2023.github.io/}{FormaliSE'23},
 	\weblink{https://www.csaeconf.org/2023}{CSAE'23}%
 }
 \cvitem{Subreviewer}{%
 	\weblink{https://issre2022.github.io/}{ISSRE-W'22},
-	\weblink{https://vmcai-2023.github.io/}{VMCAI'23}%
+	\weblink{https://vmcai-2023.github.io/}{VMCAI'23},
+	\weblink{https://sbmf23.ufam.edu.br/}{SBMF'23}%
 }
 \cvitem{AE}{%
 	\weblink{https://sv-comp.sosy-lab.org/2022/}{TACAS'22 (SV-COMP)},

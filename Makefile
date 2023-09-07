@@ -1,7 +1,7 @@
 all: clean
 	cd src; \
-	latexmk -pdf leventebajczi_cv_en; \
-	# latexmk -pdf leventebajczi_cv_en_long; \
+	latexmk -jobname=leventebajczi_cv_en -pdf leventebajczi_cv_en.tex; \
+	latexmk -jobname=leventebajczi_cv_en_long -pdf -pretex="\def\islong{1}" -usepretex leventebajczi_cv_en.tex; \
 	latexmk -pdf leventebajczi_publist_en_cat
 	$(MAKE) clean
 
