@@ -1,4 +1,4 @@
-﻿@inproceedings{formalise22,
+﻿@inproceedings{MTMT:32836583,
 	title = {C for Yourself: Comparison of Front-End Techniques for Formal Verification},
 	author = {Bajczi, Levente and Ádám, Zsófia and Molnár, Vince},
 	booktitle = {2022 IEEE/ACM 10th International Conference on Formal Methods in Software Engineering (FormaliSE)},
@@ -13,7 +13,7 @@
 	url_mtmt = {https://m2.mtmt.hu/api/publication/32836583},
 }
 
-@article{acmtecs2019,
+@article{MTMT:30865515,
 	title = {Will My Program Break on This Faulty Processor?. Formal Analysis of Hardware Fault Activations in Concurrent Embedded Software},
 	author = {Bajczi, Levente and Vörös, András and Molnár, Vince},
 	doi = {10.1145/3358238},
@@ -32,7 +32,7 @@
 	url_mtmt = {https://m2.mtmt.hu/api/publication/30865515},	
 }
 
-@article{tacas22,
+@article{MTMT:32801008,
 	title = {Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)},
 	author = {Ádám, Zsófia and Bajczi, Levente and Dobos-Kovács, Mihály and Hajdu, Ákos and Molnár, Vince},
 	doi = {10.1007/978-3-030-99527-0_34},
@@ -52,4 +52,53 @@
     url_slides = {https://leventebajczi.github.io/publications/slides/tacas22.pdf},
     url_poster = {https://leventebajczi.github.io/publications/posters/tacas22.pdf},
 	url_mtmt = {https://m2.mtmt.hu/api/publication/32801008},
+}
+
+
+@inproceedings{MTMT:34768972,
+	title = {ConcurrentWitness2Test: Test-Harnessing the Power of Concurrency (Competition Contribution)},
+	author = {Bajczi, Levente and Ádám, Zsófia and Micskei, Zoltán Imre},
+	booktitle = {Tools and Algorithms for the Construction and Analysis of Systems},
+	doi = {10.1007/978-3-031-57256-2_16},
+	unique-id = {34768972},
+	abstract = {ConcurrentWitness2Test is a violation witness validator for concurrent software. Taking both nondeterminism of data and interleaving-based nondeterminism into account, the tool aims to use the metadata described in the violation witnesses to synthesize an executable test harness. While plagued by some initial challenges yet to overcome, the validation performance of ConcurrentWitness2Test corroborates the usefulness of the proposed approach.},
+	year = {2024},
+	pages = {330-334},
+	orcid-numbers = {Bajczi, Levente/0000-0002-6551-5860; Ádám, Zsófia/0000-0003-2354-1750; Micskei, Zoltán Imre/0000-0003-1846-261X},
+
+    url_pdf    = {https://leventebajczi.github.io/publications/tacas24cwt.pdf},
+    url_slides = {https://leventebajczi.github.io/publications/slides/tacas24cwt.pdf},
+    url_mtmt = {https://m2.mtmt.hu/api/publication/34768972},
+}
+
+@inproceedings{MTMT:34768428,
+	title = {Theta: Abstraction Based Techniques for Verifying Concurrency (Competition Contribution)},
+	author = {Bajczi, Levente and Telbisz, Csanád and Somorjai, Márk and Ádám, Zsófia and Dobos-Kovács, Mihály and Szekeres, Dániel and Mondok, Milán and Molnár, Vince},
+	booktitle = {Tools and Algorithms for the Construction and Analysis of Systems},
+	doi = {10.1007/978-3-031-57256-2_30},
+	unique-id = {34768428},
+	abstract = {Theta is a model checking framework, with a strong emphasis on effectively handling concurrency in software using abstraction refinement algorithms. In SV-COMP 2024, we use 1) an abstraction-aware partial order reduction; 2) a dynamic statement reduction technique; and 3) enhanced support for call stacks to handle recursive programs. We integrate these techniques in an improved architecture with inherent support for portfolio-based verification using dynamic algorithm selection, with a diverse selection of supported SMT solvers as well. In this paper we detail the advances of Theta regarding concurrent and recursive software support.},
+	year = {2024},
+	pages = {412-417},
+	orcid-numbers = {Bajczi, Levente/0000-0002-6551-5860; Telbisz, Csanád/0000-0002-6260-5908; Ádám, Zsófia/0000-0003-2354-1750; Dobos-Kovács, Mihály/0000-0002-0064-2965; Szekeres, Dániel/0000-0002-2912-028X; Mondok, Milán/0000-0001-5396-2172; Molnár, Vince/0000-0002-8204-7595},
+
+    url_pdf    = {https://leventebajczi.github.io/publications/tacas24theta.pdf},
+    url_slides = {https://leventebajczi.github.io/publications/slides/tacas24theta.pdf},
+    url_mtmt = {https://m2.mtmt.hu/api/publication/34768428},
+}
+
+@inproceedings{MTMT:34768422,
+	title = {EmergenTheta: Verification Beyond Abstraction Refinement (Competition Contribution)},
+	author = {Bajczi, Levente and Szekeres, Dániel and Mondok, Milán and Ádám, Zsófia and Somorjai, Márk and Telbisz, Csanád and Dobos-Kovács, Mihály and Molnár, Vince},
+	booktitle = {Tools and Algorithms for the Construction and Analysis of Systems},
+	doi = {10.1007/978-3-031-57256-2_23},
+	unique-id = {34768422},
+	abstract = {Theta is a model checking framework conventionally based on abstraction refinement techniques. While abstraction is useful for a large number of verification problems, the over-reliance on the technique led to Theta being unable to meaningfully adapt. Identifying this problem in previous years of SV-COMP has led us to create EmergenTheta , a sandbox for the new approaches we want Theta to support. By differentiating between mature and emerging techniques, we can experiment more freely without hurting the reliability of the overall framework. In this paper we detail the development route to EmergenTheta , and its first debut on SV-COMP’24 in the ReachSafety category.},
+	year = {2024},
+	pages = {371-375},
+	orcid-numbers = {Bajczi, Levente/0000-0002-6551-5860; Szekeres, Dániel/0000-0002-2912-028X; Mondok, Milán/0000-0001-5396-2172; Ádám, Zsófia/0000-0003-2354-1750; Telbisz, Csanád/0000-0002-6260-5908; Dobos-Kovács, Mihály/0000-0002-0064-2965; Molnár, Vince/0000-0002-8204-7595},
+
+    url_pdf    = {https://leventebajczi.github.io/publications/tacas24etheta.pdf},
+    url_slides = {https://leventebajczi.github.io/publications/slides/tacas24etheta.pdf},
+    url_mtmt = {https://m2.mtmt.hu/api/publication/34768422},
 }
